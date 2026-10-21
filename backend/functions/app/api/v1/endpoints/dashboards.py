@@ -3,7 +3,7 @@ from typing import NoReturn
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from pydantic import BaseModel, Field
 
-from app.auth import UserClaims, require_role
+from app.core.permissions import UserClaims, require_role
 
 router = APIRouter(tags=["dashboards"])
 

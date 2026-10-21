@@ -4,7 +4,7 @@ from typing import Literal, NoReturn
 from fastapi import APIRouter, Depends, HTTPException, Path, Query, status
 from pydantic import BaseModel, Field
 
-from app.auth import UserClaims, require_role, require_roles
+from app.core.permissions import UserClaims, require_role, require_roles
 
 router = APIRouter(tags=["research submissions"])
 

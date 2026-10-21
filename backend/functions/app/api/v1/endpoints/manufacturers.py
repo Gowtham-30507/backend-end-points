@@ -3,7 +3,7 @@ from typing import Literal, NoReturn
 from fastapi import APIRouter, Depends, HTTPException, Path, Query, status
 from pydantic import BaseModel, EmailStr, Field
 
-from app.auth import UserClaims, require_role
+from app.core.permissions import UserClaims, require_role
 
 router = APIRouter(tags=["manufacturers"])
 
