@@ -8,8 +8,8 @@ from sqlalchemy.orm import sessionmaker
 
 from app.main import app
 from app.config import settings
-from database.session import Base, get_db
-from database.schema.models import User, Doctor, Manufacturer
+from databases.session import Base, get_db
+from databases.schema.models import User, Doctor, Manufacturer
 
 # Use SQLite in-memory for testing
 from sqlalchemy.pool import StaticPool

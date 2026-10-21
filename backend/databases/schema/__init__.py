@@ -1,4 +1,4 @@
-from database.schema.models import (
+from databases.schema.models import (
     User,
     Doctor,
     DoctorCertification,

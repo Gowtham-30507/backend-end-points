@@ -3,7 +3,7 @@ from datetime import date, datetime, timezone
 from sqlalchemy import String, Integer, DateTime, Date, Enum, ForeignKey, Text, JSON, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from database.session import Base
+from databases.session import Base
 
 # Enums
 UserRoleEnum = Enum("doctor", "manufacturer", "admin", name="user_role")

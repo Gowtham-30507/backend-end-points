@@ -8,8 +8,8 @@ from sqlalchemy.pool import StaticPool
 from app.main import app
 from app.config import settings
 from app.auth import create_access_token, hash_password
-from database.session import Base, get_db
-from database.schema.models import User, Doctor, Manufacturer, Product, AdrReport, AuditHistory
+from databases.session import Base, get_db
+from databases.schema.models import User, Doctor, Manufacturer, Product, AdrReport, AuditHistory
 
 TEST_DATABASE_URL = "sqlite:///:memory:"
 engine = create_engine(

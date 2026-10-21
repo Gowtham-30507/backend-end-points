@@ -5,8 +5,8 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
 from app.auth import UserClaims, require_role, require_roles
-from database.session import get_db
-from database.schema.models import (
+from databases.session import get_db
+from databases.schema.models import (
     Doctor,
     ResearchSubmission as DBResearchSubmission,
     AuditHistory,

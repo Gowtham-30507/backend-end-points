@@ -5,8 +5,8 @@ from sqlalchemy.orm import Session
 from sqlalchemy import or_
 
 from app.auth import UserClaims, require_role
-from database.session import get_db
-from database.schema.models import Manufacturer, Product, AuditHistory
+from databases.session import get_db
+from databases.schema.models import Manufacturer, Product, AuditHistory
 
 router = APIRouter(tags=["products"])
 

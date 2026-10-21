@@ -6,7 +6,7 @@ from typing import TypedDict
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
-from database.schema.models import Doctor, Referral as DBReferral
+from databases.schema.models import Doctor, Referral as DBReferral
 
 
 class DoctorScoreData(TypedDict):

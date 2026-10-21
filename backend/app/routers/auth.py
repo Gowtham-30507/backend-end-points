@@ -3,8 +3,8 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel, EmailStr, Field
 from sqlalchemy.orm import Session
 
-from database.session import get_db
-from database.schema.models import User, Doctor, Manufacturer, AuditHistory
+from databases.session import get_db
+from databases.schema.models import User, Doctor, Manufacturer, AuditHistory
 from app.auth import (
     hash_password,
     verify_password,

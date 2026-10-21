@@ -4,8 +4,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
 
-from database.session import Base
-from database.schema.models import User, Doctor, Manufacturer, AuditHistory
+from databases.session import Base
+from databases.schema.models import User, Doctor, Manufacturer, AuditHistory
 
 
 # Use an in-memory SQLite database for isolated test execution

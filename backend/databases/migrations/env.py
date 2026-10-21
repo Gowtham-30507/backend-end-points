@@ -13,9 +13,9 @@ if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
 from app.config import settings
-from database.session import Base
+from databases.session import Base
 # Import all models so that Base.metadata has all table definitions
-import database.schema.models  # noqa: F401
+import databases.schema.models  # noqa: F401
 
 config = context.config
 

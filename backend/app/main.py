@@ -16,7 +16,7 @@ from app.routers.auth import router as auth_router
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from database.session import check_db_connection
+from databases.session import check_db_connection
 
 app = FastAPI(title=settings.PROJECT_NAME)
 
